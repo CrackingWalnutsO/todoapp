@@ -116,6 +116,15 @@ const styles = StyleSheet.create({
 
 
 export default App;
+
+/*Start Mongo DB Instance
+1. Pull Docker Image: docker pull mongo
+2. Run docker container: docker run --name mymongo -d -p 27017:27017 mongo
+3. Connect with VSCode extension: Connection string to mongo db VS Code extension with default docker settings: mongodb://localhost:27017
+*/
+//start app with 
+//- node server.js
+//- npx expo --web
 //make babel.config.js a json: babel.config.json with content
 //  {
 //  "presets": ["babel-preset-expo"]
