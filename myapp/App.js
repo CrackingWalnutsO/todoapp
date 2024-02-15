@@ -12,7 +12,7 @@ const App = () => {
   const fetchTodos = async () => {
     try {
       // Adjust the URL to your Gitpod URL
-      const response = await fetch('https://3000-crackingwalnuts-todoapp-gfb7ol2oosj.ws-eu108.gitpod.io/todolist');
+      const response = await fetch('https://3000-crackingwalnuts-todoapp-8qx921s8jgx.ws-eu108.gitpod.io/todolist');
       const todos = await response.json();
       setTodos(todos);
     } catch (error) {
@@ -22,7 +22,7 @@ const App = () => {
 
   const addTodo = async () => {
     try {
-      await fetch('https://3000-crackingwalnuts-todoapp-gfb7ol2oosj.ws-eu108.gitpod.io/todolist', {
+      await fetch('https://3000-crackingwalnuts-todoapp-8qx921s8jgx.ws-eu108.gitpod.io/todolist', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ const App = () => {
 
   const deleteTodo = async (todoId) => {
     try {
-      await fetch(`https://3000-crackingwalnuts-todoapp-gfb7ol2oosj.ws-eu108.gitpod.io/todolist/${todoId}`, {
+      await fetch(`https://3000-crackingwalnuts-todoapp-8qx921s8jgx.ws-eu108.gitpod.io/todolist/${todoId}`, {
         method: 'DELETE',
       });
       fetchTodos();
@@ -124,7 +124,8 @@ export default App;
 */
 //start app with 
 //- node server.js
-//- npx expo --web
+//- npx expo --web or
+//- npx expo --tunnel (enables connecting device/smartphone by using Expo Go App and Scannign QR Code)
 //make babel.config.js a json: babel.config.json with content
 //  {
 //  "presets": ["babel-preset-expo"]
