@@ -125,7 +125,7 @@ export default App;
 //start app with 
 //- node server.js
 //- npx expo --web or
-//- npx expo --tunnel (enables connecting device/smartphone by using Expo Go App and Scannign QR Code)
+//- for using Gitpod and testing app on smartphone (different network): npx expo --tunnel (enables connecting device/smartphone by using Expo Go App and Scannign QR Code)
 //make babel.config.js a json: babel.config.json with content
 //  {
 //  "presets": ["babel-preset-expo"]
